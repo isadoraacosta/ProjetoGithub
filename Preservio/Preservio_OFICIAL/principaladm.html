@@ -1,0 +1,362 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="css/principal.css">
+    <link rel="stylesheet" href="css/cabecalho.css">
+    <link rel="stylesheet" href="css/rodape.css">
+    <link rel="shortcut icon" href="img/1-fotor-bg-remover-2023112994232.png" type="image/x-icon">
+    <title>Início | PRESERVIO</title>
+</head>
+<body>
+    <header id="main-header">
+        <div class="img"></div>
+        <nav>
+            <ul>
+                <li>
+                    <a class="option"  href="principaladm.html">Início</a>
+                </li>
+
+
+                <li>
+                    <a class="option" href="#">Informação</a>
+                    <div class="submenu">
+                        <a href="noticiasadm.html" class="sub">Notícias</a>
+                        <a href="leisadm.html" class="sub">Leis</a>
+                    </div>
+                </li>
+
+                <li>
+                    <a class="option" href="denunciast.html">Visualizar Denúncias</a>
+                </li>
+
+                <li>
+                    <a class="option" href="#">Publicar Informação</a>
+                    <div class="submenu">
+                        <a href="pubinformações.html" class="sub">Notícias</a>
+                        <a href="publicarLeis.html" class="sub">Leis</a>
+                    </div>
+                </li>
+                <li>
+                    <a class="option" href="principaladm.html#sobre1">Sobre nós</a>
+                </li>
+                <li>
+                    <a class="option" href="centraldeajudaadm.html">Contato</a>
+                </li>
+                <li>
+                    <a class="option" href="visualizarPerfiladm.html">Perfil</a>
+                </li>
+                <li>
+                    <a class="option" href="principal.html">Sair  </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            var header = document.getElementById('main-header');
+            var yOffset = window.pageYOffset;
+
+            if (yOffset > 0) {
+                header.classList.add('nav-small');
+            } else {
+                header.classList.remove('nav-small');
+            }
+        });
+    </script>
+
+
+
+
+<main>
+    <div id="carrossel" >
+        <div class="slideshow-container">
+            <a href="noticia.html">
+                <img src="img/slide11.png" alt="Slide 1">
+              </a>
+              <a href="noticia.html">
+                <img src="img/slide22.png" alt="Slide 2">
+              </a>
+              <a href="noticia.html">
+                <img src="img/slide33.png" alt="Slide 3">
+              </a>
+              <a href="noticia.html">
+                <img src="img/slide44.png" alt="Slide 4">
+              </a>
+         
+            <div class="dots">
+              <span class="dot" onclick="currentSlide(0)"></span>
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+
+
+        <script>
+            const slides = document.querySelectorAll('.slideshow-container a');
+            const dots = document.querySelectorAll('.dot');
+           
+            let currentSlideIndex = 0;
+           
+            function showSlide(n) {
+              slides.forEach(slide => {
+                slide.style.display = 'none';
+              });
+              slides[n].style.display = 'block';
+            }
+           
+            function showDot(n) {
+              dots.forEach(dot => {
+                dot.classList.remove('active');
+              });
+              dots[n].classList.add('active');
+            }
+           
+            function currentSlide(n) {
+              currentSlideIndex = n;
+              showSlide(currentSlideIndex);
+              showDot(currentSlideIndex);
+            }
+           
+            function nextSlide() {
+              currentSlideIndex++;
+              if (currentSlideIndex > slides.length - 1) {
+                currentSlideIndex = 0;
+              }
+              showSlide(currentSlideIndex);
+              showDot(currentSlideIndex);
+            }
+           
+            setInterval(nextSlide, 5000);
+            </script>
+    </div>
+
+
+
+
+    <div >
+        <h2 class="titulo titulo1">POR QUE PRESERVAR O MEIO AMBIENTE?</h2>
+        <div id ="div1">
+            <div class="conteud1">
+                <i class="fa-solid fa-earth-asia iconeimp" style="color: #1F6031;"></i>
+            <h3 class="subtitulo subimp">3 bilhões</h3>
+            <p class="paragrafo">de pessoas no mundo vivem em lugares vulneráveis à crise climática</p>
+            <p class="fonte">Fonte: IPCC</p>
+        </div>
+        <div class="conteud1">
+            <i class="fa-solid fa-faucet-drip iconeimp" style="color: #1F6031;"></i>
+            <h3 class="subtitulo subimp">25%</h3>
+            <p class="paragrafo">dos municípios brasileiros distribuem água com resíduos de agrotóxicos para seus moradores</p>
+            <p class="fonte">Fonte: Ministério da Saúde</p>
+        </div>
+        <div class="conteud1">
+            <i class="fa-solid fa-tree iconeimp" style="color: #1F6031;"></i>
+            <h3 class="subtitulo subimp">40 mil</h3>
+            <p class="paragrafo">casos de intoxicação aguda por agrotóxicos foram registrados entre 2007 e 2017 no Brasil</p>
+            <p class="fonte">Fonte: Ministério da Saúde</p>
+        </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div id="div2">
+        <iframe width="140px" height="50" src="https://www.youtube.com/embed/Edczwt571k8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div id="importancia">
+            <h2 class=" titulo titulo-importancia" >Qual a importância de <a id="prestar" href="#">prestar denúncia?</a></h2>
+            <p class="conteudo-importancia paragrafo">Prestar denúncia é fundamental para proteger o meio ambiente, promover responsabilidade e impulsionar práticas sustentáveis. Contribuir com denúncias é uma ação impactante para garantir um futuro mais verde e equilibrado.</p>
+        </div>
+    </div>
+
+
+
+
+
+    <div id="botaodenuncia">
+        <h2 class=" subtitulo">Faça uma denúncia!</h2>
+        <a href="#">CLIQUE AQUI</a>
+    </div>
+
+
+    <div id="sobre1">
+        <img id="imgsobre1" src="img/Capturar.PNG" alt="">
+        <div id="branco"></div>
+        <div id="verde">
+        <h2 class="titulo">SOBRE A SECRETARIA DO MEIO AMBIENTE</h2>
+        <p class="paragrafo">A secretaria do meio ambiente é tão importante quanto as demais secretarias que fazem parte do órgão público, ela é responsável pela proteção, conservação e recuperação dos recursos naturais também tem por finalidade fiscalizar e garantir que as leis ambientais sejam cumpridas.</p>
+        </div>
+    </div>
+
+
+    <div id="sobre2">
+        <h2 class="titulo1 titulo">SOBRE NÓS</h2>
+        <p class="paragrafo psobre">O projeto por nome Preservio trata sobre a preservação do meio ambiente, visando a  sustentabilidade da fauna e flora e de como podemos cuidar das mesmas. Devido o crescente desinteresse da sociedade em relação a questões associadas à preservação do biossistema foi criado este site com  o intuito de conscientizar e instruir a populaçãoa sobre esta  causa  e conceder aos usuários este espaço para prestaram suas denúncias, relacionadas aos malefícios contra o ecossistema tornando assim o meio ambiente um lugar mais sustentável.</p>
+       
+
+        <div id="obj">
+        <h3 class="subtitulo subcomp">Nossos <br> Compromissos</h3>
+        <ul>
+            <div >
+                <li>Priorizamos a urgência na investigação de denúncias ambientais recebidas pelo nosso site. Comprometemo-nos a conduzir essas investigações rapidamente com uma equipe especializada, visando assegurar a punição dos responsáveis por irregularidades ambientais.</li>
+                <li>A inovação é essencial para a proteção do meio ambiente. Portanto, realizaremos pesquisas e buscaremos desenvolver novas tecnologias e soluções ambientais. Explorando maneiras mais eficientes e eficazes de proteger o meio ambiente.</li>
+            </div>
+            <div >
+                <li>A educação é a chave para a construção de um futuro mais sustentável. Por isso, publicaremos materiais educativos sobre temas ambientais, como poluição, desmatamento, mudanças climáticas e leis ambientais.</li>
+                <li>A inovação é essencial para a proteção do meio ambiente. Portanto, realizaremos pesquisas e buscaremos desenvolver novas tecnologias e soluções ambientais.</li>
+            </div>
+        </ul>
+       
+        <div id="objetivos">
+            <div class="objetivo">
+                <div class="bloco linha1">
+                    <h2>1</h2>
+                    <p>VIDA NA ÁGUA</p>
+                    <div class="foto cor1"><div class="foto2"><i class="fa-solid fa-water iconeobj"></i></div></div>
+                </div>
+               
+                <div class="bloco linha1">
+                    <h2>2</h2>
+                    <p>AÇÃO CONTRA A MUDANÇA GLOBAL DO CLIMA</p>
+                    <div class="foto cor2"><div class="foto2"><i class="fa-solid fa-volcano iconeobj"></i></div></div>
+                </div>
+               
+                <div class="bloco linha2">
+                    <h2>3</h2>
+                    <p>PROTEÇÃO A ECOSSISTEMAS</p>
+                    <div class="foto cor3"><div class="foto2"><i class="fa-solid fa-tree-city iconeobj"></i></div></div>
+                </div>
+               
+                <div class="bloco linha2">
+                    <h2>4</h2>
+                    <p>CONSUMO E PRODUÇÃO RESPONSÁVEIS</p>
+                    <div class="foto cor4"><div class="foto2"><i class="fa-solid fa-industry iconeobj"></i></div></div>
+                </div>
+               
+                <div class="bloco linha3">
+                    <h2>5</h2>
+                    <p>COMBATER AS MUDANÇAS CLIMÁTICAS</p>
+                    <div class="foto cor5"><div class="foto2"><i class="fa-solid fa-cloud-rain iconeobj"></i></div></div>
+                </div>
+            </div>
+            <div class="objetivo">
+                <div class="bloco linha3">
+                    <h2>6</h2>
+                    <p>PROTEGER TERRAS E ÁGUAS</p>
+                    <div class="foto cor6"><div class="foto2"><i class="fa-solid fa-earth-asia iconeobj"></i></div></div>
+                </div>
+                <div class="bloco linha4">
+                    <h2>7</h2>
+                    <p>CONSTRUIR CIDADES SAUDÁVEIS</p>
+                    <div class= "foto cor7"><div class="foto2"><i class="fa-solid fa-tree iconeobj"></i></div></div>
+                </div>
+                <div class="bloco linha4">
+                    <h2>8</h2>
+                    <p>EDUCAR SOBRE A BIODIVERSIDADE</p>
+                    <div class= "foto cor8" ><div class="foto2"><i class="fa-solid fa-otter iconeobj"></i></div></div>
+                </div>
+                <div class="bloco linha5">
+                    <h2>9</h2>
+                    <p>REDUZIR O DESPERDÍCIO DE RECURSOS</p>
+                    <div class= "foto cor9" ><div class="foto2"><i class="fa-solid fa-trash-can iconeobj"></i></div></div>
+                </div>
+            </div>
+            <div class="objetivo">
+                <div class="bloco linha5">
+                    <h2>10</h2>
+                    <p>CONSERVAR ESPÉCIES AMEAÇADAS</p>
+                    <div class="foto cor10"><div class="foto2"><i class="fa-solid fa-crow iconeobj"></i></div></div>
+                </div>
+                <div class="bloco linha6">
+                    <h2>11</h2>
+                    <p>FOMENTAR A RECICLAGEM E REUTILIZAÇÃO</p>
+                    <div class="foto cor11"><div class="foto2"><i class="fa-solid fa-bottle-water iconeobj"></i></div></div>
+                </div>
+                <div class="bloco linha6">
+                    <h2>12</h2>
+                    <p>DIMINUIR A POLUIÇÃO DO AR E DA ÁGUA</p>
+                    <div class="foto cor12"><div class="foto2"><i class="fa-solid fa-droplet iconeobj"></i></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="conjnoticias">
+        <h2>Últimas notícias</h2>
+        <div id="noticias">
+            <div class="noticia">
+               <a href="noticiaadm.html"> <img src="img/noticia1.jpg" alt="">
+                <h4>No AP, monitoramento de quelônios em parque de preservação do país</h4> </a>
+                <p>Ação do ICMBio em parceria com comunidades ribeirinhas no Parque Nacional Montanhas do Tumucumaque e na Floresta Nacional do Amapá.</p>
+            </div>
+   
+            <div class="noticia">
+                <a href="noticiaadm.html"> <img src="img/noticia2.jpg" alt="">
+                 <h4>Novas espécies de peixes são encontradas pela primeira vez no Brasil</h4> </a>
+                 <p>Pesquisa foi feita por pesquisadores da UFRPE, da URFJ e do Instituto Francês IRD em Fernando de Noronha e no Rio Grande do Norte.</p>
+             </div>
+   
+             <div class="noticia">
+                <a href="noticiaadm.html"> <img src="img/noticia3.jpg" alt="">
+                 <h4>
+                    Projeto de nova lei dos agrotóxicos: veja ponto a ponto o que pode mudar</h4> </a>
+                 <p>Depois de 24 anos tramitando, texto foi aprovado no Senado e agora segue para sanção do presidente Lula.</p>
+             </div>
+   
+             <div class="noticia">
+                <a href="noticiaadm.html"> <img src="img/noticia4.jpg" alt="">
+                 <h4>
+                    COP 28; saiba o que esperar da conferência sobre a crise do clima</h4> </a>
+                 <p>Entenda os pontos-chave da próxima Conferência das Nações Unidas sobre Mudanças Climáticas, que acontece em Dubai, nos Emirados Árabes Unidos.</p>
+             </div>
+   
+        </div>
+        <a href="noticiasadm.html" id="lermais"> Ler todas as notícias  ˃ </a>
+    </div>
+
+
+
+
+</main>
+
+<footer>
+    <div>
+        <p>Secretaria Municipal de Meio Ambiente <br> Bom Jesus da Lapa - Ba. <br>(77) 3481-7475</p>
+    </div>
+
+    <div>
+        <p>Acompanhe a Secretaria</p>
+        <div id="linksredes">
+        <a href=""><i class="fa-brands fa-facebook iroda"></i></a>
+        <a href=""><i class="fa-brands fa-instagram iroda"></i></a>
+        <a href=""><i class="fa-solid fa-location-dot iroda"></i></a>
+        <a href=""><i class="fa-brands fa-twitter iroda"></i></a>
+    </div>
+
+
+    </div>
+    <div id = 'divsobre'>
+        <p> <i class="fa-solid fa-circle-info"></i> Sobre o Preservio <br> Um software desenvolvido para promover <br> a sustentabilidade ambiental</p>
+</div>
+
+
+</footer>
+
+
+
+
+
+
+
+</body>
+</html>

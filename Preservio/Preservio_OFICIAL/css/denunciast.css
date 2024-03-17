@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Conteudo: */
+
+td, th{
+    border-bottom: 1px solid green;
+    padding: 3%;
+}
+
+table{
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    border-spacing: 20px;
+    margin-top: 15%;
+}
+
+button{
+    height: 70px;
+    width: 110px;
+    border-radius: 10px ;
+    border: 1px solid rgb(104, 100, 100);
+    font-size: 16px;
+}
+
+.link{
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(104, 100, 100);
+}
+
+button:hover{
+    background-color: #1F6031;
+    color: white;
+    border: #1F6031;
+}
+
+.link:hover{
+    color: white;
+}
+
+
+#icone{
+    font-size: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+th{
+    font-size: 28px;
+    color: rgb(13, 13, 24);
+    
+    
+}
+
+td{
+    font-size: 18px;
+    width: 25%;  
+    
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    main{
+        padding-top: 25%;
+    }
+}
+@media screen and (max-width: 800px) {
+    main{
+        padding-top: 30%;
+    }
+}

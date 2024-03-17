@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/noticias.css">
+    <link rel="stylesheet" href="css/cabecalho.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="css/rodape.css">
+    <link rel="shortcut icon" href="img/1-fotor-bg-remover-2023112994232.png" type="image/x-icon">
+    <title>Notícias | PRESERVIO</title>
+
+</head>
+<body>
+    <header id="main-header">
+        <div class="img"></div>
+        <nav>
+            <ul>
+                <li>
+                    <a class="option"  href="principaladm.html">Início</a>
+                </li>
+
+
+                <li>
+                    <a class="option" href="#">Informação</a>
+                    <div class="submenu">
+                        <a href="noticiasadm.html" class="sub">Notícias</a>
+                        <a href="leisadm.html" class="sub">Leis</a>
+                    </div>
+                </li>
+
+                <li>
+                    <a class="option" href="denunciast.html">Visualizar Denúncias</a>
+                </li>
+
+                <li>
+                    <a class="option" href="#">Publicar Informação</a>
+                    <div class="submenu">
+                        <a href="pubinformações.html" class="sub">Notícias</a>
+                        <a href="publicarLeis.html" class="sub">Leis</a>
+                    </div>
+                </li>
+                <li>
+                    <a class="option" href="principaladm.html#sobre1">Sobre nós</a>
+                </li>
+                <li>
+                    <a class="option" href="centraldeajudaadm.html">Contato</a>
+                </li>
+                <li>
+                    <a class="option" href="visualizarPerfiladm.html">Perfil</a>
+                </li>
+                <li>
+                    <a class="option" href="principal.html">Sair  </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            var header = document.getElementById('main-header');
+            var yOffset = window.pageYOffset;
+
+            if (yOffset > 0) {
+                header.classList.add('nav-small');
+            } else {
+                header.classList.remove('nav-small');
+            }
+        });
+    </script>
+
+
+
+<body>
+    <main>
+    <div class="cabecalho">
+        <h2>Notícias</h2>
+        <hr>
+    <div class="filtro">
+        <form action="#" method="post" name="filtro"></form>
+        <input type="text" id="titulo" name="titulo" placeholder="Título">
+        <input type="date" id="data" name="data" placeholder="Data de publicação">
+        <input type="text" id="categoria" name="categoria" placeholder="Categoria">
+        <input class="botao" type="submit" value="Filtrar">
+        </form>
+    </div>
+    </div>
+    <div id="org">
+    <div id="noticias">
+        <div>
+            <p>23/11/2015</p>
+            <h3>No AP, monitoramento de quelônios em parque de preservação do país</h3>
+            <p class="n1">Ação do ICMBio em parceria com comunidades ribeirinhas no Parque Nacional Montanhas do Tumucumaque e na Floresta Nacional do Amapá.</p>
+            <a href="noticiaadm.html"> Ver mais</a>
+        </div>
+        <div>
+            <img src="img/noticia1.jpg" alt="">
+        </div>
+    </div>
+<hr>
+ 
+
+<div id="noticias">
+    <div>
+        <p>23/11/2015</p>
+        <h3>Novas espécies de peixes são encontradas pela primeira vez no Brasil</h3>
+        <p class="n1">Pesquisa foi feita por pesquisadores da UFRPE, da URFJ e do Instituto Francês IRD em Fernando de Noronha e no Rio Grande do Norte.</p>
+        <a href="noticiaadm.html"> Ver mais</a>
+    </div>
+    <div>
+        <img src="img/noticia2.jpg" alt="">
+    </div>
+</div>
+<hr>
+
+<div id="noticias">
+    <div>
+        <p>23/11/2015</p>
+        <h3>Projeto de nova lei dos agrotóxicos: veja ponto a ponto o que pode mudar</h3>
+        <p class="n1">Depois de 24 anos tramitando, texto foi aprovado no Senado e agora segue para sanção do presidente Lula.</p>
+        <a href="noticiaadm.html"> Ver mais</a>
+    </div>
+    <div>
+        <img src="img/noticia3.jpg" alt="">
+    </div>
+</div>
+<hr>
+
+    <div id="noticias">
+        <div>
+            <p>23/11/2015</p>
+            <h3>COP 28; saiba o que esperar da conferência sobre a crise do clima</h3>
+            <p class="n1">Entenda os pontos-chave da próxima Conferência das Nações Unidas sobre Mudanças Climáticas, que acontece em Dubai, nos Emirados Árabes Unidos.</p>
+            <a href="noticiaadm.html"> Ver mais</a>
+        </div>
+        <div>
+            <img src="img/noticia4.jpg" alt="">
+        </div>
+    </div>
+<hr>
+
+<div id="noticias">
+    <div>
+        <p>23/11/2015</p>
+        <h3>No AP, monitoramento de quelônios em parque de preservação do país</h3>
+        <p class="n1">Ação do ICMBio em parceria com comunidades ribeirinhas no Parque Nacional Montanhas do Tumucumaque e na Floresta Nacional do Amapá.</p>
+        <a href="noticiaadm.html"> Ver mais</a>
+    </div>
+    <div>
+        <img src="img/noticia1.jpg" alt="">
+    </div>
+</div>
+<hr>
+</div>
+<div class="navegacao">
+    <a href="noticiasadm.html">1</a>
+    <a href="noticiasadm.html">2</a>
+    <a href="noticiasadm.html">3</a>
+</div>
+
+
+</main>
+
+<footer>
+    <div>
+        <p>Secretaria Municipal de Meio Ambiente <br> Bom Jesus da Lapa - Ba. <br>(77) 3481-7475</p>
+    </div>
+
+
+    <div>
+        <p>Acompanhe a Secretaria</p>
+        <div id="linksredes">
+        <a href=""><i class="fa-brands fa-facebook iroda"></i></a>
+        <a href=""><i class="fa-brands fa-instagram iroda"></i></a>
+        <a href=""><i class="fa-solid fa-location-dot iroda"></i></a>
+        <a href=""><i class="fa-brands fa-twitter iroda"></i></a>
+    </div>
+
+
+    </div>
+    <div id = 'divsobre'>
+        <p> <i class="fa-solid fa-circle-info"></i> Sobre o Preservio <br> Um software desenvolvido para promover <br> a sustentabilidade ambiental</p>
+</div>
+
+
+</footer>
+</body>
+</html>
+

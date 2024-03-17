@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/realizardenuncia.css">
+  <link rel="stylesheet" href="css/cabecalho.css">
+  <link rel="stylesheet" href="css/rodape.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins'/>
+  <link rel="shortcut icon" href="img/1-fotor-bg-remover-2023112994232.png" type="image/x-icon">
+
+  <title>Denúncia | PRESERVIO</title>
+</head>
+<body>
+
+    <header id="main-header">
+        <div class="img"></div>
+        <nav>
+            <ul>
+                <li>
+                    <a class="option"  href="principaluser.html">Início</a>
+                </li>
+
+
+                <li>
+                    <a class="option" href="#">Informação</a>
+                    <div class="submenu">
+                        <a href="noticiasuser.html" class="sub">Notícias</a>
+                        <a href="leisuser.html" class="sub">Leis</a>
+                    </div>
+                </li>
+                <li>
+                    <a class="option" href="realizardenunciauser.html">Denuncie</a>
+                </li>
+                <li>
+                    <a class="option" href="principaluser.html#sobre1">Sobre nós</a>
+                </li>
+                <li>
+                    <a class="option" href="centraldeajudauser.html">Contato</a>
+                </li>
+                <li>
+                    <a class="option" href="visualizarPerfiluser.html">Perfil</a>
+                </li>
+                <li>
+                    <a class="option" href="principal.html">Sair</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+<script>
+    window.addEventListener('scroll', function () {
+        var header = document.getElementById('main-header');
+        var yOffset = window.pageYOffset;
+
+        if (yOffset > 0) {
+            header.classList.add('nav-small');
+        } else {
+            header.classList.remove('nav-small');
+        }
+    });
+</script>
+
+
+<div class="inicio">
+  <div id="div2">
+    <h2 class="titulo">Importância</h2>
+    <div id="div3">
+    <br>
+    <div class="informacao">
+    <h3>Qual a importância de denunciar?</h3>
+    <p>Através do processo de denúncia, é viável identificar questões na origem, nomear os participantes envolvidos e abordar a situação antes que evolua para impactos mais graves.</p>
+    </div>
+    <div class="informacao">
+    <h3>Qual a importância de denunciar maus causados ao meio ambiente?</h3>
+    <p>Está relacionado a ajudar na preservação, uma vez que é no meio ambiente que encontramos recursos naturais para nossa sobrevivência. Sem a natureza, sem vida!</p>
+    </div>
+    </div>
+</div>
+
+<div id="tudo">
+  <div class="container1">
+    <div class="container2">
+      <div id="indicador1" class="indicator">
+        <i id="iassunto" class="fa-solid fa-font"></i>
+        <p id="passunto">Assunto</p>
+      </div>
+      <div id="indicador2" class="indicator">
+        <i class="fa-regular fa-calendar-days iindicador"></i>
+        <p>Data</p>
+      </div>
+      <div id="indicador3" class="indicator">
+        <i class="fa-solid fa-clock iindicador"></i>
+        <p>Hora</p>
+      </div>
+      <div id="indicador4" class="indicator">
+          <i class="fa-solid fa-pen iindicador"></i>
+          <p>Descrição</p>
+      </div>
+      <div id="indicador5" class="indicator">
+          <i class="fa-solid fa-quote-left iindicador"></i>
+          <p>Tipo</p>
+      </div>
+      <div id="indicador6" class="indicator">
+          <i class="fa-solid fa-thumbtack iindicador"></i>
+          <p>Anexo</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="containerform" class="containerform">
+    <div id="parte1" class="parteform visivel">
+      <h2>Registro de denúncia</h2>
+      <p class="paragrafo">Vamos Começar!</p>
+      <label for="assunto">Assunto:</label>
+      <br>
+      <div class="icone">
+        <i class="fa-solid fa-font"></i>
+        <input type="text" id="assunto"  required>
+    </div>
+      <button class="botao" onclick="proximoParte(1)">Próximo</button>
+    </div>
+
+    <div id="parte2" class="parteform">
+      <h2>Registro de denúncia</h2>
+      <label for="data">Data:</label>
+      <br>
+      <div class="icone">
+        <i class="fa-regular fa-calendar-days"></i>
+        <input type="date" id="data" required>
+      </div>
+      <button onclick="proximoParte(2)">Próximo</button>
+    </div>
+
+    <div id="parte3" class="parteform">
+      <h2>Registro de denúncia</h2>
+      <label for="hora">Hora:</label>
+      <br>
+      <div class="icone">
+        <i class="fa-solid fa-clock"></i>
+        <input type="time" id="hora" required>
+      </div>
+      <button onclick="proximoParte(3)">Próximo</button>
+    </div>
+
+    <div id="parte4" class="parteform">
+        <h2>Registro de denúncia</h2>
+        <label for="descricao">Descrição:</label>
+        <br>
+        <div class="iconetextarea">
+          <i class="fa-solid fa-pen"></i>
+          <textarea name="descricao" id="descricao" cols="100px" rows="3px"></textarea>
+        </div>
+        <button onclick="proximoParte(4)">Próximo</button>
+    </div>
+
+    <div id="parte5" class="parteform">
+        <h2>Registro de denúncia</h2>
+        <label for="tipo">Tipo:</label>
+        <br>
+        <div class="icone">
+          <i class="fa-solid fa-quote-left"></i>
+          <select>
+              <option value="maus tratos aos animais">Maus tratos aos animais</option>
+              <option value="desmatamento">Desmatamento</option>
+              <option value="queimada">Queimada</option>
+          </select>
+        </div>
+        <button onclick="proximoParte(5)">Próximo</button>
+    </div>
+
+    <div id="parte6" class="parteform">
+        <h2>Registro de denúncia</h2>
+        <label for="anexo">Anexo:</label>
+        <br>
+        <div class="icone">
+          <i class="fa-solid fa-thumbtack"></i>
+          <input type="file" name="anexo" id="anexo" class="anexo">
+        </div>
+        <button onclick="proximoParte(6)">Enviar</button>
+      </div>
+
+    <div id="parte7" class="parteform">
+      <h2>Registro de denúncia</h2>
+      <p id="pfinal">Denúncia feita com sucesso. Parabéns pela atitude!</p>
+    </div>
+  </div>
+</div>
+
+  <script>
+    function proximoParte(parte) {
+      document.getElementById(`parte${parte}`).classList.remove('visivel');
+      document.getElementById(`indicador${parte}`).classList.add('verde');
+      document.getElementById(`parte${parte + 1}`).classList.add('visivel');
+    }
+
+    function enviarFormulario() {
+      document.getElementById('containerform').style.display = 'none';
+      document.getElementById('parte5').classList.remove('visivel');
+      document.getElementById('parte6').classList.add('visivel');
+      document.getElementById('indicador3').classList.add('verde');
+    }
+  </script>
+
+
+<footer>
+  <div>
+      <p>Secretaria Municipal de Meio Ambiente <br> Bom Jesus da Lapa - Ba. <br>(77) 3481-7475</p>
+  </div>
+
+
+  <div>
+      <p>Acompanhe a Secretaria</p>
+      <div id="linksredes">
+      <a href=""><i class="fa-brands fa-facebook iroda"></i></a>
+      <a href=""><i class="fa-brands fa-instagram iroda"></i></a>
+      <a href=""><i class="fa-solid fa-location-dot iroda"></i></a>
+      <a href=""><i class="fa-brands fa-twitter iroda"></i></a>
+  </div>
+
+
+  </div>
+  <div id = 'divsobre'>
+      <p> <i class="fa-solid fa-circle-info"></i> Sobre o Preservio <br> Um software desenvolvido para promover <br> a sustentabilidade ambiental</p>
+</div>
+
+
+</footer>
+
+
+</body>
+</html>

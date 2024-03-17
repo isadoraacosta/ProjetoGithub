@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizar perfil │ Preservio</title>
+    <link rel="stylesheet" href="css/visualizarPerfil.css">
+    <link rel="stylesheet" href="css/rodape.css">
+    <link rel="stylesheet" href="css/cabecalho.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link href="https: //fonts.googleapis.com/css2? family= Josefin+Sans & display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/1-fotor-bg-remover-2023112994232.png" type="image/x-icon">
+</head>
+<body>
+
+    <header id="main-header">
+        <div class="img"></div>
+        <nav>
+            <ul>
+                <li>
+                    <a class="option"  href="principaladm.html">Início</a>
+                </li>
+
+
+                <li>
+                    <a class="option" href="#">Informação</a>
+                    <div class="submenu">
+                        <a href="noticiasadm.html" class="sub">Notícias</a>
+                        <a href="leisadm.html" class="sub">Leis</a>
+                    </div>
+                </li>
+
+                <li>
+                    <a class="option" href="denunciast.html">Visualizar Denúncias</a>
+                </li>
+
+                <li>
+                    <a class="option" href="#">Publicar Informação</a>
+                    <div class="submenu">
+                        <a href="pubinformações.html" class="sub">Notícias</a>
+                        <a href="publicarLeis.html" class="sub">Leis</a>
+                    </div>
+                </li>
+                <li>
+                    <a class="option" href="principaladm.html#sobre1">Sobre nós</a>
+                </li>
+                <li>
+                    <a class="option" href="centraldeajudaadm.html">Contato</a>
+                </li>
+                <li>
+                    <a class="option" href="visualizarPerfiladm.html">Perfil</a>
+                </li>
+                <li>
+                    <a class="option" href="principal.html">Sair  </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            var header = document.getElementById('main-header');
+            var yOffset = window.pageYOffset;
+
+            if (yOffset > 0) {
+                header.classList.add('nav-small');
+            } else {
+                header.classList.remove('nav-small');
+            }
+        });
+    </script>
+
+    <div id="apresentacao">
+
+        <i class="fa-regular fa-circle-user"></i> 
+        
+        <p id="ptitulo">Olá, Isadora!</p>
+
+    </div>
+
+    <hr class="separa">
+
+
+    <main>
+
+        <div id="principal">
+
+            <div class="titulodados">
+
+                <h2 class="titdados">Dados pessoais</h2> 
+                
+                <hr class="separa">
+
+                <br>
+
+            </div>
+
+            <div id="dadospessoais">
+
+                <div class="alinha">
+
+                    <div class="divitens">
+                        <p class="tit">Nome:</p> <br>
+                        <p class="cada">Isadora</p> <br> <br>
+                    </div>
+
+          
+                    <div class="divitens">
+                        <p class="tit">Sobrenome:</p> <br>
+                        <p class="cada">Costa Nascimento</p> <br> <br>
+                    </div>
+
+                </div>
+
+                <div class="alinha">
+
+                    <div class="divitens">
+                        <p class="tit">CPF:</p> <br>
+                        <p class="cada">123.456.789.00</p> <br> <br>
+                    </div>
+
+                    <div class="divitens">
+                        <p class="tit">Data de nascimento:</p> <br>
+                        <p class="cada">01/01/00</p> <br> <br>
+                    </div>
+                
+                </div>
+
+            </div>
+
+
+
+            <div class="titulodados">
+
+                <h2 class="titdados">Dados de acesso</h2> 
+                
+                <hr class="separa">
+
+                <br>
+
+            </div>
+
+            <div id="dadosacesso">
+
+                <div class="divitens">
+                    <p class="tit">Usúario:</p> <br>
+                    <p class="cada">isadora123@gmail.com</p> <br> <br>
+                </div>
+          
+                <div class="divitens">
+                    <p class="tit">Senha:</p> <br>
+                    <p class="cada">***</p> <br> <br>
+                </div>
+
+
+            </div>
+
+        </div>   
+
+    </main>
+
+
+    <footer>
+        <div>
+            <p>Secretaria Municipal de Meio Ambiente <br> Bom Jesus da Lapa - Ba. <br>(77) 3481-7475</p>
+        </div>
+    
+    
+        <div>
+            <p>Acompanhe a Secretaria</p>
+            <div id="linksredes">
+            <a href=""><i class="fa-brands fa-facebook iroda"></i></a>
+            <a href=""><i class="fa-brands fa-instagram iroda"></i></a>
+            <a href=""><i class="fa-solid fa-location-dot iroda"></i></a>
+            <a href=""><i class="fa-brands fa-twitter iroda"></i></a>
+        </div>
+    
+    
+        </div>
+        <div id = 'divsobre'>
+            <p> <i class="fa-solid fa-circle-info"></i> Sobre o Preservio <br> Um software desenvolvido para promover <br> a sustentabilidade ambiental</p>
+    </div>
+    
+    
+    </footer>
+
+    
+</body>
+</html>
