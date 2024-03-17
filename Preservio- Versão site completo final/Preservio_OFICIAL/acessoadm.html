@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/DadosDeAcesso.css">
+    <link rel="stylesheet" href="css/rodape.css">
+    <link rel="stylesheet" href="css/cabecalho.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link href="https: //fonts.googleapis.com/css2? family= Josefin+Sans & display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/1-fotor-bg-remover-2023112994232.png" type="image/x-icon">
+    <title>Dados de acesso │ Preservio</title>
+</head>
+<body>
+    <header id="main-header">
+        <div class="img"></div>
+        <nav>
+            <ul>
+                <li>
+                    <a class="option"  href="principal.html">Início</a>
+                </li>
+                <li>
+                    <a class="option" href="#">Informação</a>
+                    <div class="submenu">
+                        <a href="noticias.html" class="sub">Notícias</a>
+                        <a href="leis.html" class="sub">Leis</a>
+                    </div>
+                </li>
+                <li>
+                    <a class="option" href="realizardenuncia.html">Denuncie</a>
+                </li>
+                <li>
+                    <a class="option" href="#">Entrar</a>
+                    <div class="submenu">
+                        <a href="loginuser.html" class="sub">Usuário</a>
+                        <a href="login.html" class="sub" >Acesso Restrito</a>
+                    </div>
+                </li>
+                <li>
+                    <a class="option" href="principal.html#sobre1">Sobre nós</a>
+                </li>
+                <li>
+                    <a class="option" href="centraldeajuda.html">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            var header = document.getElementById('main-header');
+            var yOffset = window.pageYOffset;
+
+            if (yOffset > 0) {
+                header.classList.add('nav-small');
+            } else {
+                header.classList.remove('nav-small');
+            }
+        });
+    </script>
+
+
+    <main>
+
+        <div class="divacesso">
+
+        <h2>Cadastro de Administrador</h2>
+        <h3>Dados de acesso</h3>
+        <br>
+
+        <h3>Esta área é destinada para o cadastro de funcionários da Secretaria do Meio Ambiente. Portanto, só funcionarios da Secretaria do Meio Ambiente ou parceiros credenciados devem realizar seu cadastro.</h3> 
+        <br>
+
+        <form action="#" name="login adm" method="post">
+            <fieldset>
+                <div class="alinhatd">
+                    <label for="login">Usuário:</label> <br>
+                    <div class="icone">
+                        <i class="fa-regular fa-circle-user"></i>
+                        <input type="email" name="email" class="adm" placeholder="Digite seu e-mail ou CPF" required> 
+                        <br> 
+                    </div>
+
+                    <label for="senha">Senha:</label> <br>
+                    <div class="icone">
+                        <i class="fa-solid fa-lock"></i>
+                    <input type="password" name="senha" class="adm" placeholder="Digite sua senha" required>
+                    <br>
+                </div>
+
+                <label for="consenha">Confirmação de senha:</label> <br>
+                    <div class="icone">
+                        <i class="fa-solid fa-lock"></i>
+                    <input type="password" name="confsenha" class="adm" placeholder="Digite novamente sua senha" required>
+                    <br>
+                </div>
+                <button class="button" type="submit"><a href="principaladm.html" class="adobotao">Cadastrar</a></button>
+                </fieldset>
+            </form>
+            <br>
+            
+            </div>
+        </div>
+        
+    </main>
+
+    
+    <footer>
+        <div>
+            <p>Secretaria Municipal de Meio Ambiente <br> Bom Jesus da Lapa - Ba. <br>(77) 3481-7475</p>
+        </div>
+    
+        <div>
+            <p>Acompanhe a Secretaria</p>
+            <div id="linksredes">
+            <a href=""><i class="fa-brands fa-facebook iroda"></i></a>
+            <a href=""><i class="fa-brands fa-instagram iroda"></i></a>
+            <a href=""><i class="fa-solid fa-location-dot iroda"></i></a>
+            <a href=""><i class="fa-brands fa-twitter iroda"></i></a>
+        </div>
+    
+        </div>
+        <div id = 'divsobre'>
+            <p> <i class="fa-solid fa-circle-info"></i> Sobre o Preservio <br> Um software desenvolvido para promover <br> a sustentabilidade ambiental</p>
+    </div>
+    
+    
+    </footer>
+
+    
+</body>
+</html>

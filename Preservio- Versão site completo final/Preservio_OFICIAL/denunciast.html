@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat:wght@200&display=swap" rel="stylesheet">
+<link href="https: //fonts.googleapis.com/css2? family= Josefin+Sans & display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="img/1-fotor-bg-remover-2023112994232.png" type="image/x-icon">
+    <title>Denúncias | PRESERVIO</title>
+
+    <link rel="stylesheet" href="css/cabecalho.css">
+    <link rel="stylesheet" href="css/rodape.css">
+    <link rel="stylesheet" href="css/denunciast.css">
+
+</head>
+<body>
+
+    <header id="main-header">
+        <div class="img"></div>
+        <nav>
+            <ul>
+                <li>
+                    <a class="option"  href="principaladm.html">Início</a>
+                </li>
+
+
+                <li>
+                    <a class="option" href="#">Informação</a>
+                    <div class="submenu">
+                        <a href="noticiasadm.html" class="sub">Notícias</a>
+                        <a href="leisadm.html" class="sub">Leis</a>
+                    </div>
+                </li>
+
+                <li>
+                    <a class="option" href="denunciast.html">Visualizar Denúncias</a>
+                </li>
+
+                <li>
+                    <a class="option" href="#">Publicar Informação</a>
+                    <div class="submenu">
+                        <a href="pubinformações.html" class="sub">Notícias</a>
+                        <a href="publicarLeis.html" class="sub">Leis</a>
+                    </div>
+                </li>
+                <li>
+                    <a class="option" href="principaladm.html#sobre1">Sobre nós</a>
+                </li>
+                <li>
+                    <a class="option" href="centraldeajudaadm.html">Contato</a>
+                </li>
+                <li>
+                    <a class="option" href="visualizarPerfiladm.html">Perfil</a>
+                </li>
+                <li>
+                    <a class="option" href="principal.html">Sair  </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            var header = document.getElementById('main-header');
+            var yOffset = window.pageYOffset;
+
+            if (yOffset > 0) {
+                header.classList.add('nav-small');
+            } else {
+                header.classList.remove('nav-small');
+            }
+        });
+    </script>
+
+    <main>
+ 
+        <table>
+            
+            <tr>
+
+                <th>Tipo da denúncia</th>
+                <th>Assunto da denúncia</th>
+                <th>Data da denúncia</th>
+                <th>Visualizar denúncia</th>
+            </tr>
+            <tr>
+                <td> Queimada</td>
+                <td>Queimada em local público </td>
+                <td>07/12/2023</td>
+                <td><button type="button"><a href="visualizard.html" class="link">visualizar denúncia</a></button></td>
+            </tr>
+
+            <tr>
+                <td>Desmatamento</td>
+                <td>Remoção da vegetação nativa da área</td>
+                <td>01/12/2023</td>
+                <td><button type="button"><a href="visualizard.html" class="link">visualizar denúncia</a></button></td>
+            </tr>
+
+            <tr>
+                <td>Poluição de rios</td>
+                <td>Compromete a utilização das águas para usos benéficos</td>
+                <td>08/01/2023</td>
+                <td><button type="button"><a href="visualizard.html" class="link">visualizar denúncia</a></button></td>
+
+            <tr>
+                <td>Poluição sonora</td>
+                <td> Excesso de ruídos que afetam a saúde mental e humana</td>
+                <td>01/10/2023</td>
+                <td><button type="button"><a href="visualizard.html" class="link">visualizar denúncia</a></button></td>
+            </tr>
+            <tr>
+                <td>Maltrato aos animais</td>
+                <td>Abandono de animais</td>
+                <td>07/07/2023</td>
+                <td><button type="button"><a href="visualizard.html" class="link">visualizar denúncia</a></button></td>
+            </tr>
+            
+            
+        </table>
+        <div id="icone">
+            <i class="fa-brands fa-pagelines" style="color: #2c9f1d;"></i>
+            <i class="fa-brands fa-pagelines" style="color: #2c9f1d;"></i>
+        </div>
+
+    </main>
+
+    <footer>
+        <div>
+            <p>Secretaria Municipal de Meio Ambiente <br> Bom Jesus da Lapa - Ba. <br>(77) 3481-7475</p>
+        </div>
+    
+    
+        <div>
+            <p>Acompanhe a Secretaria</p>
+            <div id="linksredes">
+            <a href=""><i class="fa-brands fa-facebook iroda"></i></a>
+            <a href=""><i class="fa-brands fa-instagram iroda"></i></a>
+            <a href=""><i class="fa-solid fa-location-dot iroda"></i></a>
+            <a href=""><i class="fa-brands fa-twitter iroda"></i></a>
+        </div>
+    
+    
+        </div>
+        <div id = 'divsobre'>
+            <p> <i class="fa-solid fa-circle-info"></i> Sobre o Econnect <br> Um software desenvolvido para promover <br> a sustentabilidade ambiental</p>
+    </div>
+    
+    
+    </footer>
+    
+</body>
+</html>

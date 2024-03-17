@@ -1,0 +1,228 @@
+
+
+
+
+/* geral */
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    min-height: 90vh;
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+#principalLeis{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-family: "Gothic";
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+
+
+#h1dotitulo{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 33px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-top: 20%;
+    
+}
+
+
+.labels{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(0, 0, 0);
+    padding: 0 0 0 5px;
+    margin-top: 10px;
+    height: 5px;
+    font-size: 20px;
+
+}
+
+.lei{
+
+    border-color: rgb(128, 128, 128);
+    width: 650px;
+    height: 60px;
+    background-color: rgba(245, 243, 243, 0.867);
+    font-size: 15px;
+    border-radius: 6px;
+    font-size: 18px;
+    padding: 0 0 0 8px;
+
+}
+
+#textcont{
+
+    border-color: rgb(128, 128, 128);
+    background-color: rgba(245, 243, 243, 0.867);
+    font-size: 15px;
+    border-radius: 6px;
+    font-size: 18px;
+    padding: 10px 0 0 10px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+#tipolei{
+
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 20%;
+    
+}
+
+#button{ 
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(55, 86, 55);
+    align-self: center;
+    margin-top: 20px;
+    color: white;
+    align-items: center;
+    font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    margin-left: 40%;
+    margin-bottom: 10%;
+    cursor: pointer;
+}
+
+
+
+#tituloedes{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0%;
+    padding-bottom: 5%;
+
+
+}
+
+#principaldetd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+#imagemdalei{
+    display: flex;
+    margin-bottom: 10%;
+    border-right: 30px;
+    margin-left: 100px;
+
+}
+
+#contlei{
+    border: 3px;
+}
+
+
+/* responsividade */
+
+@media (max-width: 1000px) {
+    main {
+        padding-top: 20px
+    }
+
+    #principaldetd {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10%;
+    }
+
+    #tipolei {
+        width: 100%;
+        margin-left: 8%;
+        padding: 1px;
+    }
+
+    #imagemdalei {
+        width: 70%;
+        height: 80%;
+        margin-left: 5%;
+    }
+
+    #button {
+        margin-left: 40%;
+    }
+
+   
+    h3 {
+        max-width: 50%; 
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .lei {
+        width: 80%; 
+        height: 40px; 
+        font-size: 18px;
+        margin-left: 15%;
+    }
+
+    #textcont {
+        width: 80%; 
+        height: 150px; 
+        font-size: 18px;
+        margin-left: 15%;
+    }
+
+    #h1dotitulo{
+
+        margin-top: 30%;
+
+    }
+
+    .labels{
+        margin-left: 15%;
+    }
+    
+
+
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    main{
+        padding-top: 10%;
+    }
+}
+@media screen and (max-width: 800px) {
+    main{
+        padding-top: 30%;
+    }
+}
+
+
+
+@media screen and (max-width: 700px) {
+    .cabecalho{
+        padding-top: 38%;
+    }
+}
